@@ -1,0 +1,93 @@
+<div *ngIf="users.length > 0">
+  <div class="bg-gray-200 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto py-1">
+      <div class="mb-4">
+        <ng-container>
+          <div class="container_perfil">
+            <mat-card appearance="outlined" class="mat-elevation-z8">
+              <div class="mat-elevation-z8 containerPerfil">
+                <div class="perfil">
+                  <div class="icon_perfil">
+                    <mat-card
+                      class="mat-elevation-z8 icon"
+                      appearance="outlined"
+                      >U</mat-card
+                    >
+                  </div>
+                  <div class="flex_perfilUser">
+                    <h1 class="useRegister user">{{ "usuario 01" }}</h1>
+                    <p class="useRegister phone">{{ users[0].to }}</p>
+                  </div>
+                </div>
+                <div class="experiencie">
+                  <div class="flex_perfilUser">
+                    <h1 class="useRegister user">Experencia</h1>
+                    <p class="useRegister phone">{{ users[0].exp }}</p>
+                  </div>
+                </div>
+              </div>
+              <p class="text_">
+                {{ users[0].text }}
+              </p>
+            </mat-card>
+          </div>
+        </ng-container>
+      </div>
+      <div class="mb-4">
+        <ng-container>
+          <div class="container_perfil">
+            <mat-card appearance="outlined" class="mat-elevation-z8">
+              <div class="mat-elevation-z8 containerPerfil">
+                <div class="perfil">
+                  <div class="flex_perfilUser">
+                    <h1 class="useRegister user">Mensaje a enviar</h1>
+                  </div>
+                </div>
+              </div>
+              <textarea>
+                
+              </textarea>
+              <div class="mat-elevation-z8 containerPerfil">
+                <div class="perfil">
+                  <div class="flex_perfilUser">
+                    <h1 class="useRegister user">0/160 1/110</h1>
+                  </div>
+                </div>
+                <button mat-flat-button (click)="send()">SEND</button>
+
+                <div class="mb-4 flex justify-end">
+                  <button
+                    class="text-white text-sm font-bold py-4 px-16"
+                    mat-flat-button
+                    (click)="redirect()"
+                  >
+                    Nuevo Registro
+                  </button>
+                </div>
+              </div>
+            </mat-card>
+          </div>
+        </ng-container>
+
+        <ng-container>
+          <div class="container_perfil">
+            <mat-card
+              appearance="outlined"
+              class="mat-elevation-z8"
+              *ngFor="let item of users"
+            >
+              <div class="mat-elevation-z8 containerPerfil">
+                <div class="perfil">
+                  <div class="flex_perfilUser">
+                    <h1 class="useRegister user">{{ item.fullname }}</h1>
+                  </div>
+                </div>
+              </div>
+              <p class="text_send">{{ item.to }}</p>
+            </mat-card>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

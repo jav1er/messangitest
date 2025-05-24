@@ -1,0 +1,71 @@
+.icon {
+  background: rgb(238, 237, 237);
+  text-align: center;
+  justify-content: center;
+  border-radius: 300px;
+  margin: 10pt;
+  padding: 10pt;
+  width: 30pt;
+  height: 30pt;
+  border: 2px rgb(99, 98, 98) solid;
+  color: #444444;
+}
+
+.perfil {
+  width: 100%;
+  padding: 7pt;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.experiencie {
+  width: 100%;
+  padding: 7pt;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10pt;
+}
+
+.flex_perfilUser {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.useRegister.phone {
+  font-size: 10pt;
+}
+.useRegister.user {
+  font-weight: 500;
+}
+
+.containerPerfil {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  margin: 10pt;
+}
+
+.text_ {
+  width: 98%;
+  padding: 10;
+  margin: 10px;
+  text-align: center;
+}
+
+.text_send {
+  height: 200px;
+}
